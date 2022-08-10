@@ -1,0 +1,89 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styleInfoLivro.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <title>Biblio+</title>
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+</head>
+
+<body class="bg" onload="carregaLivro()">
+
+    <header id="header">
+
+        <nav id="nav" class="nav-bar container-fluid">
+            <div class="row nav-superior">
+                <div class="d-flex navbar-logo col-lg-2 col-md-6 col-sm-12 coll ">
+                    <a href="index.html"><img class="img-logo" src="img/logo_completa.png" alt=""></a>
+                    <button class="col-sm-3" aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                        <a href="index.html"><img class="user-img user-mobile" src="img/user.png" alt=""></a>
+                        <span id="hamburger"></span>
+                       
+                      </button>
+
+                </div>
+
+
+                <div class="form col-lg-4 col-md-5 col-sm-12 coll pt-4">
+
+                    <input id="txtPesquisa" class="form-control me-2" type="text" placeholder="Pesquisar livros" aria-label="Search">
+                    <a href="consulta.html"><button id="btnPesquisa" onclick="armazenaPesquisa(document.getElementById('txtPesquisa').value)" class="btn btn-outline-light"><i class="bi bi-search"></i></button></a>
+                    <a href="Login.html"><img class="user-img user-desktop" src="img/user.png" alt=""></a>
+
+                </div>
+            </div>
+            <div class=" navbar-itens pt-1 pb-1">
+                <ul id="menu" class="menu row">
+                    <li class="col-lg-2 col-md-2 gy-1 coll nav-item"><a href="homePage.html">HOME</a></li>
+                    <li class="col-lg-2 col-md-2 gy-1 coll nav-item"><a href="homePage.html">BUSCAR</a></li>
+                    <li class="col-lg-2 col-md-2 gy-1 coll nav-item"><a href="homePage.html">CLUBES</a></li>
+                    <li class="col-lg-2 col-md-2 gy-1 coll nav-item"><a href="homePage.html">RECOMENDADOS</a></li>
+
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    <section>
+        <div class="container-fluid fundo_conteudo">
+
+            <div class="lineBooks row" id="telinha">
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <footer class="  container-fluid">
+        <article class="row rodape text-center">
+            <div class="col 2">
+                <p>PUC Minas</p>
+            </div>
+            <div class="col 2">
+
+                <p>
+                    <a href="index.html"><img class="img-logo-simplificada" src="img/logo_simplificada.png" alt=""></a> Biblio+ 2022 © Todos os direitos reservados</p>
+            </div>
+            <div class="col 2">
+                <p>bibliomais@email.com</p>
+            </div>
+        </article>
+    </footer>
+
+    <script src="js/jsConsulta.js"></script>
+    <script src="./emprestimo/scriptEmprestimo.js"></script>
+
+</html>

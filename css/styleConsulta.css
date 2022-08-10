@@ -1,0 +1,232 @@
+.bg {
+    margin: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: url(/img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.nav-superior {
+    justify-content: space-between;
+}
+
+#header {
+    background-color: #0d3257;
+    padding-top: 5px;
+    display: flex;
+}
+
+div.logo {
+    margin-bottom: 5px;
+    padding: 0;
+    width: 230px;
+    height: 69px;
+}
+
+.img-logo {
+    width: 230px;
+    margin: 5px;
+    size: 2em;
+}
+
+.user-img {
+    width: 35px;
+    margin-left: 15px;
+}
+
+.img-logo-simplificada {
+    width: 30px;
+}
+
+.nav-item {
+    background-color: #f44926;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    margin: 0 5px;
+    padding: 7px;
+}
+
+a:hover {
+    color: white !important;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #0d3257;
+    font-weight: bold;
+    padding: 2em;
+}
+
+.menu {
+    margin: 2px 30px;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+}
+
+.navbar-itens {
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.fundo_conteudo {
+    margin-top: 30px;
+    width: 95% !important;
+    background-color: #ffffff70;
+    text-align: justify;
+    justify-content: center;
+    border-radius: 15px;
+    color: white;
+    width: 100%;
+}
+
+.user-mobile {
+    display: none;
+}
+
+#btn-mobile {
+    display: none;
+    color: white;
+}
+
+.boxLivro {
+    background-color: #143e68fd;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 15px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.boxLivro img {
+    width: 45%;
+}
+
+.lineBooks {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-primary {
+    background-color: #f44926 !important;
+    border-color: #ffffff !important;
+}
+
+
+/* /////////// Menu Mobile /////////////// */
+
+@media (max-width: 767px) {
+    #menu {
+        display: flex;
+        position: absolute;
+        width: 75%;
+        top: 80px;
+        right: 12px;
+        background: #0b253e;
+        transition: 0.9s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        align-content: center;
+        justify-content: center;
+        border-radius: 15px;
+        gap: 15px;
+    }
+    #nav.active #menu {
+        height: 250px;
+        visibility: visible;
+        overflow-y: auto;
+        padding: 15px;
+    }
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(252, 247, 247, 0);
+    }
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .user-mobile {
+        display: flex;
+        margin-right: 10px;
+    }
+    .user-desktop {
+        display: none;
+    }
+    .navbar-logo {
+        justify-content: space-between;
+    }
+    #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+    }
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+
+
+/* /////////// Menu Mobile /////////////// */
+
+footer {
+    color: #c8ff16;
+    background-color: #0d3257;
+    margin-top: 25px;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+}
+
+@media(max-width: 767px) {
+    .lineBooks {
+        padding-top: 15px;
+        display: flex;
+        justify-content: center;
+    }
+}

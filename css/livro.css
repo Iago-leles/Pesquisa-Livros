@@ -1,0 +1,21 @@
+#livro{
+    text-align: center;
+}
+
+#Tx{
+    padding: 50px;
+    color: #F44926;
+}
+
+#capa{
+    align-items: center;
+    width: 30%;
+}
+.card-group{
+    width: 20%;
+}
+
+#Tx2{
+    padding: 20px;
+    color: white;
+}

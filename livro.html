@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--testeee-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/livro.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <title>Emprestimo</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/Icone.ico">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+</head>
+
+<body class="imagem-fundo">
+
+    <header id="header-cabecalho">
+
+        <nav id="nav" class="nav-bar container-fluid">
+            <div class="row nav-superior">
+                <div class="d-flex navbar-logo col-lg-2 col-md-6 col-sm-12 coll ">
+                    <a href="homePage.html"><img class="img-logo" src="img/logo_completa.png" alt=""></a>
+                    <button class="col-sm-3" aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu-cab" aria-expanded="false">
+                        <a href="Login.html"><img class="user-img user-mobille" src="img/user.png" alt=""></a>
+                        <span id="hamburger"></span>
+
+                    </button>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-5 col-sm-12 coll pt-4">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar livros" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+                        <a href="Login.html"><img class="user-img user-desktop" src="img/user.png" alt=""></a>
+                    </form>
+                </div>
+            </div>
+            <div class=" navbar-itens pt-1 pb-1">
+                <ul id="menu-cab" class="menu-cab row">
+                    <li class="col-lg-2 col-md-2 gy-1 coll nave-item"><a href="homePage.html">HOME</a></li>
+                    <li class="col-lg-2 col-md-2 gy-1 coll nave-item"><a href="homePage.html">BUSCAR</a></li>
+                    <li class="col-lg-2 col-md-2 gy-1 coll nave-item"><a href="homePage.html">CLUBES</a></li>
+                    <li class="col-lg-2 col-md-2 gy-1 coll nave-item"><a href="homePage.html">RECOMENDADOS</a></li>
+
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    <section>
+        <div class="fundo">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div id="livro" class="fundo_conteudo gy-3 p-5 col-lg-10 coll">
+
+                        <h1 id="Tx">EMPRESTIMO DE LIVRO</h1>
+
+                        <img id="capa" src="img/Livros/Lewis.jpg" class="img-thumbnail" alt="...">
+
+                        <h2 id="Tx2">Titulo do Livro</h2>
+
+                        <p>Aqui vem uma breve sinopse do livro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cum culpa hic inventore, illum iste aspernatur dolorem dicta necessitatibus molestiae recusandae aliquid ratione architecto delectus
+                            debitis! Voluptatum excepturi quo iusto!
+                        </p>
+
+                        <button type="button" class="btn btn-danger">Solicitar Emprestimo</button>
+                    </div>
+                    <div class="col-lg-1"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer class="  container-fluid">
+        <article class="row rodape text-center">
+            <div class="col 2">
+                <p>PUC Minas</p>
+            </div>
+            <div class="col 2">
+
+                <p>
+                    <a href="index.html"><img class="img-logo-simplificada" src="img/logo_simplificada.png" alt=""></a>
+                    Biblio+ 2022 © Todos os direitos reservados
+                </p>
+            </div>
+            <div class="col 2">
+                <p>bibliomais@email.com</p>
+            </div>
+        </article>
+    </footer>
+
+    <script type="text/javascript" src="js/javascript.js"></script>
+</body>
+
+</html>

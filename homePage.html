@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--testeee-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleHomePage.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <title>Biblio+</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/Icone.ico">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+</head>
+
+<body class="imagem-fundo">
+
+    <header id="header-cabecalho">
+
+        <nav id="nav" class="nav-bar container-fluid">
+            <div class="row nav-superior">
+                <div class="d-flex navbar-logo col-lg-2 col-md-6 col-sm-12 coll ">
+                    <a href="homePage.html"><img class="img-logo" src="img/logo_completa.png" alt=""></a>
+                    <button class="col-sm-3" aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu-cab" aria-expanded="false">
+                        <a href="Login.html"><img class="user-img user-mobille" src="img/user.png" alt=""></a>
+                        <span id="hamburger"></span>
+
+                    </button>
+
+                </div>
+
+
+                <div class="form col-lg-4 col-md-5 col-sm-12 coll pt-4">
+
+                    <input id="txtPesquisa" class="form-control me-2" type="text" placeholder="Pesquisar livros" aria-label="Search">
+                    <a href="consulta.html"><button id="btnPesquisa" onclick="armazenaPesquisa(document.getElementById('txtPesquisa').value)" class="btn btn-outline-light"><i class="bi bi-search"></i></button></a>
+                    <a href="Login.html"><img class="user-img user-desktop" src="img/user.png" alt=""></a>
+
+                </div>
+            </div>
+            <div class=" navbar-itens pt-1 pb-1">
+                <ul id="menu-cab" class="menu-cab row">
+                    <li class="col-lg-2 col-md-2 gy-1 coll nave-item"><a href="homePage.html">HOME</a></li>
+                    <li class="col-lg-2 col-md-2 gy-1 coll nave-item"><a href="homePage.html">BUSCAR</a></li>
+                    <li class="col-lg-2 col-md-2 gy-1 coll nave-item"><a href="homePage.html">CLUBES</a></li>
+                    <li class="col-lg-2 col-md-2 gy-1 coll nave-item"><a href="homePage.html">RECOMENDADOS</a></li>
+
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    <section>
+        <div class="fundo">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div class="fundo_conteudo gy-3 p-5 col-lg-10 coll">
+
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="img/Banner/Banner1.png" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/Banner/Banner2.png" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/Banner/Banner3.png" alt="Third slide">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+
+                        <!--Recomendados-->
+
+                        <h1 id="titulo">RECOMENDADOS</h1>
+
+                        <div class="card-deck">
+
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="img/Livros/cronicas.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">As Crônicas de Nárnia</h5>
+                                    <p class="card-text">As Crónicas de Nárnia, é uma série de sete romances de alta fantasia, escrita pelo autor irlandês C. S. Lewis.</p>
+                                    <a href="livro.html" class="btn btn-outline-danger">Espiar</a>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="img/Livros/diario.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Diário de Um Banana</h5>
+                                    <p class="card-text">Diário de Um Banana é uma série de livros do gênero ficção científica escrito pelo cartunista Jeff Kinney</p>
+                                    <a href="livro.html" class="btn btn-outline-danger">Espiar</a>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="img/Livros/harry.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Prisioneiro de Askaban</h5>
+                                    <p class="card-text">Harry Potter e o Prisioneiro de Azkaban é o terceiro livro dos sete volumes da série de fantasia Harry Potter.</p>
+                                    <a href="livro.html" class="btn btn-outline-danger">Espiar</a>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="img/Livros/mochileiro.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Guia Definitivo</h5>
+                                    <p class="card-text">É primeiro dos cinco livros da série literária The Hitchhiker's Guide to the Galaxy, escrito por Douglas Adams.</p>
+                                    <a href="livro.html" class="btn btn-outline-danger">Espiar</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--MAIS LIDOS-->
+
+                        <h1 id="titulo">MAIS LIDOS</h1>
+
+                        <div class="card-deck">
+
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="img/Livros/Conflito.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">O Grande Conflito</h5>
+                                    <p class="card-text">Estamos envoltos em uma guerra invisivel entre o bem e o mal, e essa guerra definirá o nosso futuro ou será que já está definido?</p>
+                                    <a href="livro.html" class="btn btn-outline-danger">Espiar</a>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="img/Livros/Lewis.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cristianismo Puro e S.</h5>
+                                    <p class="card-text">É um livro de C.S. Lewis, adaptado de uma série de conversas de rádio levadas ao ar pela BBC entre 1941 e 1944.</p>
+                                    <a href="livro.html" class="btn btn-outline-danger">Espiar</a>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="img/Livros/Para.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Para Todos Os G.</h5>
+                                    <p class="card-text">É uma série de filmes de romance adolescente, baseada na trilogia de romances de mesmo nome escrita por Jenny Han.
+                                    </p>
+                                    <a href="livro.html" class="btn btn-outline-danger">Espiar</a>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="img/Livros/Percy.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">O Ladrão de Raios</h5>
+                                    <p class="card-text">The Lightning Thief é o primeiro livro da série Percy Jackson & os Olimpianos baseado na mitologia grega, escrito por Rick Riordan.</p>
+                                    <a href="livro.html" class="btn btn-outline-danger">Espiar</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--ULTIMAS NOTÍCIAS-->
+
+                        <h1 id="titulo">ÚLTIMAS NOTÍCIAS</h1>
+
+                        <div class="card-columns">
+                            <div class="card">
+                                <img class="card-img-top" src="img/Livros/noticia1.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Movimento no Acampamento Meio-Sangue</h5>
+                                    <p class="card-text">As Gravações da serie desenvolviada pelo Disney+ que adaptara a famosa serie de livros Percy Jeckson e os Olimpianos teve seu inicio.</p>
+                                </div>
+                            </div>
+                            <div class="card p-3">
+                                <blockquote id="Tx1" class="blockquote bg-light mb-0 card-body">
+                                    <p>“Meninas são mais difíceis de entender do que o Oráculo de Delfos.”</p>
+                                    <footer id="Tx1" class="blockquote-footer bg-light">
+                                        <small class="text-muted">
+                                            Percy <cite title="Source Title">Jackson</cite>
+                                        </small>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="img/Livros/noticia2.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Netflix compra direitos</h5>
+                                    <p class="card-text">Netflix adiquire os direitos para a criação de uma serie de As Crônicas de Nárnia.</p>
+                                    <p class="card-text"><small class="text-muted">Último update à 2 dias</small></p>
+                                </div>
+                            </div>
+                            <div class="card bg-dark text-white text-center p-3">
+                                <blockquote class="blockquote mb-0">
+                                    <p>Para vencer as trevas exteriores é preciso antes vencer as trevas dentro de si.
+                                    </p>
+                                    <footer id="Tx" class="blockquote-footer bg-dark">
+                                        <small>
+                                            C.S <cite title="Source Title">Lewis</cite>
+                                        </small>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h5 class="card-title">Game of Thrones</h5>
+                                    <p class="card-text">O autor da serie de livros George R. R. Martin diz estar finalizando o ultimo livro da série.</p>
+                                    <p class="card-text"><small class="text-muted">Último update à 3 min</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img" src="img/Livros/noticia3.jpg" alt="Card image">
+                            </div>
+                            <div class="card p-3 text-right">
+                                <blockquote id="Tx1" class="blockquote mb-0  bg-light">
+                                    <p>São as nossas escolhas as que melhor definem o que somos, muito mais que nossas habilidades.
+                                    </p>
+                                    <footer id="Tx1" class="blockquote-footer bg-light">
+                                        <small class="text-muted">
+                                            Alvo <cite title="Source Title">Dumbledore</cite>
+                                        </small>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Diario de um Banana</h5>
+                                    <p class="card-text">Primeiro livro da série é adaptado para um longa animado e é lançado diretamente no Disney+.</p>
+                                    <p class="card-text"><small class="text-muted">Último update à 7 min</small></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-1"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer class="  container-fluid">
+        <article class="row rodape text-center">
+            <div class="col 2">
+                <p>PUC Minas</p>
+            </div>
+            <div class="col 2">
+
+                <p>
+                    <a href="index.html"><img class="img-logo-simplificada" src="img/logo_simplificada.png" alt=""></a>
+                    Biblio+ 2022 © Todos os direitos reservados
+                </p>
+            </div>
+            <div class="col 2">
+                <p>bibliomais@email.com</p>
+            </div>
+        </article>
+    </footer>
+
+    <script src="js/jsConsulta.js"></script>
+    <script type="text/javascript" src="js/javascript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

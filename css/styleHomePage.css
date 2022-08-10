@@ -1,0 +1,44 @@
+.card-deck {
+    color: white;
+    padding-top: 50px;
+    align-items: center;
+}
+
+.card-title {
+    color: white;
+}
+
+.card-body {
+    background-color: #143E68;
+}
+
+#titulo {
+    padding-top: 50px;
+    color: #F44926;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.card-columns {
+    padding-top: 50px;
+    @include media-breakpoint-only(lg) {
+        column-count: 4;
+    }
+    @include media-breakpoint-only(xl) {
+        column-count: 5;
+    }
+}
+
+#Tx {
+    color: white;
+}
+
+#Tx1 {
+    color: black
+}
+
+.form {
+    display: flex;
+    align-items: center;
+}

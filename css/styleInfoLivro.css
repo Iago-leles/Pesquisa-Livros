@@ -77,6 +77,12 @@ a:hover {
     justify-content: center;
 }
 
+#btnPesquisa {
+    display: flex;
+    height: 38px;
+    align-items: center;
+}
+
 section {
     display: flex;
     justify-content: center;
